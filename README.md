@@ -143,4 +143,8 @@ Contributions welcome! Please open issues or PRs.
 - **Platform Support:** Best on Linux, macOS support good, Windows experimental
 
 
+## License
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE) — free to use, learn from, and extend.
+
 **Disclaimer:** Fortify is a prototype for educational and demonstration purposes. Not intended for production security use. Always comply with local laws regarding network monitoring.
