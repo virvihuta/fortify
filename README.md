@@ -45,3 +45,62 @@ It continuously monitors traffic metadata, learns normal device behavior and ide
 - **Flask** – to expose data API endpoints
 - **React** – for dashboard UI
 
+## Development Plan
+
+### Week 1-2: Foundation
+**Hasanaj:** Device discovery (ARP scan) + packet capture (scapy) → output metadata JSON  
+**Virvi:** Research features, load sample PCAPs, design feature schema (15-20 features)  
+**Mjeda:** Flask setup, basic dashboard UI, device table with fake data  
+**Integration:** Discovery → Dashboard shows real devices
+
+### Week 3-4: Feature Pipeline & First Model
+**Hasanaj:** Time-window aggregation (5-min windows per device), DNS logging, connection tracking  
+**Virvi:** Feature extraction pipeline, train Isolation Forest on 24h baseline, output risk scores (0-100)  
+**Mjeda:** Activity charts, risk score display (color-coded), alerts panel  
+**Integration:** Capture → Features → ML Scoring → Dashboard with live risk
+
+### Week 5-6: Rule Engine & Polish
+**Hasanaj:** Rule-based detection (traffic spikes, port scans, DNS anomalies), threat intel blocklists  
+**Virvi:** Combine ML + rules, per-device baselines, explainability (top reasons for alerts)  
+**Mjeda:** Alert filtering, WebSocket updates, settings page (adjust thresholds), charts (traffic/risk/protocols)  
+**Integration:** ML + Rules → Combined alerts with explanations
+
+### Week 7-8: Protection & Testing
+**Hasanaj:** Firewall integration (block/unblock IPs), cross-platform support, stress testing  
+**Virvi:** Auto-response logic, false positive tracking, model tuning, unit tests  
+**Mjeda:** Block/unblock UI, protection logs, error handling, loading states  
+**Integration:** Full system 24h test, bug fixes
+
+### Week 9-10: Demo Mode & Documentation
+**Hasanaj:** Packet replay tool, demo scenarios (normal/suspicious/attack PCAPs)  
+**Virvi:** Synthetic attack data, replay mode, presentation notebooks  
+**Mjeda:** Demo mode toggle, playback controls, scenario selector, export (CSV/PDF)  
+**All:** Write documentation (technical, user guide, installation), create video tutorial
+
+### Week 11-12: Final Integration & Conference Prep
+**Week 11:** Integration testing, 48h continuous run, bug fixes, code cleanup, polish UI  
+**Week 12:** Presentation slides, demo script, rehearsals, backup materials (video/slides)  
+**Demo Day:** 10-min live demo (discovery → detection → alert → block → replay)
+
+### Key Milestones
+- **Week 2:** Live device table updating  
+- **Week 4:** Risk scores displayed, first ML detection  
+- **Week 6:** Rule alerts working, polished dashboard  
+- **Week 8:** Full system stable (v0.3)  
+- **Week 10:** Demo mode ready (v0.9)  
+- **Week 12:** Conference ready (v1.0)
+
+### Weekly Cadence
+- **Monday 6pm:** Planning sync (30 min)  
+- **Friday 6pm:** Integration demo (30 min)  
+- **Daily:** 5-min standup on Discord (async)  
+- **Integration points:** End of Week 2, 4, 6, 8, 10
+
+### Success Criteria
+- Discovers all devices <30 sec  
+- Detects simulated attacks <5% false positive rate  
+- Dashboard loads <2 sec, real-time updates  
+- 10-min live demo runs flawlessly  
+- Works on Linux + macOS  
+- Complete documentation + video tutorial
+
