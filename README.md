@@ -1,15 +1,11 @@
-# Fortify — AI-Powered Network Security Agent
+# Fortify
 
 Fortify is a lightweight, fully local cybersecurity prototype that **discovers devices on your network**, **analyzes their behavior using AI** and **protects you from potential threats in real time** — all from your laptop, with **no cloud dependencies**.
-
----
 
 ## Overview
 
 Fortify acts as a **mini network security agent** for your home or demo environment.  
 It continuously monitors traffic metadata, learns normal device behavior and identifies anomalies that may signal risk — visualizing everything through a modern **Dashboard**.
-
----
 
 ## How It Works
 
@@ -41,11 +37,7 @@ It continuously monitors traffic metadata, learns normal device behavior and ide
    - Executes basic firewall rules for risky destinations.  
    - Confirms action results and logs them for traceability.  
 
----
-
 ## Tech Stack
-
-### Backend
 - **Python 3**
 - **Scapy / PyShark** – for packet capture
 - **Pandas / NumPy** – for data aggregation
