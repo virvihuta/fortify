@@ -1,5 +1,9 @@
 # Fortify
 
+![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Status](https://img.shields.io/badge/status-prototype-yellow.svg)
+
 Fortify is a lightweight, fully local cybersecurity prototype that **discovers devices on your network**, **analyzes their behavior using AI** and **protects you from potential threats in real time** — all from your laptop, with **no cloud dependencies**.
 
 ## Overview
@@ -104,3 +108,39 @@ It continuously monitors traffic metadata, learns normal device behavior and ide
 - Works on Linux + macOS  
 - Complete documentation + video tutorial
 
+## Use Cases
+
+- **Home Network Security:** Monitor your personal devices for suspicious behavior
+- **IoT Device Auditing:** Discover what your smart home devices are really doing
+- **Security Education:** Learn about network traffic analysis and ML-based detection
+- **Conference Demos:** Showcase real-time threat detection in a controlled environment
+- **Research Prototype:** Foundation for academic network security research
+
+## Contributing
+
+This is an educational prototype built by:
+- **Virvi Huta** – Data Science & ML
+- **Aiden Hasanaj** – Network Security & Capture
+- **Aiden Mjeda** – Full-Stack & Dashboard
+
+Contributions welcome! Please open issues or PRs.
+
+## Requirements
+
+- Python 3.10+
+- Linux or macOS (Windows support experimental)
+- Root/sudo access (for packet capture)
+- 4GB+ RAM recommended
+- WiFi or Ethernet connection to local network
+
+
+## Limitations
+
+- **Home Network Scale:** Designed for 5-50 devices, not enterprise-scale
+- **False Positives:** IoT devices may trigger alerts due to unusual behavior patterns
+- **Detection Delay:** 5-minute windows mean attacks aren't detected instantly
+- **No Deep Packet Inspection:** Cannot analyze encrypted payload content
+- **Platform Support:** Best on Linux, macOS support good, Windows experimental
+
+
+**Disclaimer:** Fortify is a prototype for educational and demonstration purposes. Not intended for production security use. Always comply with local laws regarding network monitoring.
