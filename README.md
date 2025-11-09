@@ -142,6 +142,9 @@ Contributions welcome! Please open issues or PRs.
 - **No Deep Packet Inspection:** Cannot analyze encrypted payload content
 - **Platform Support:** Best on Linux, macOS support good, Windows experimental
 
+## Landing Page
+[https://fortify-platform.com](https://fortify-platform.com)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/db03471a-caa0-48c5-8745-b391f4e2fb3f/deploy-status)](https://app.netlify.com/projects/fortify-platform/deploys)
 
 ## License
 
